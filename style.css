@@ -1,0 +1,141 @@
+/* General page styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f9fc;
+  color: #1a2b3c;
+}
+
+/* Top Navigation Bar */
+.topnav {
+  background: #e6f3fa;
+  padding: 12px;
+  text-align: center;
+  position: sticky; /* sticks the nav to top on scroll */
+  top: 0;
+}
+.topnav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #2d7a9f;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+.topnav a:hover {
+  color: #1e5e77; /* darker on hover */
+}
+
+/* Hero section (Home page) */
+.hero {
+  background: linear-gradient(135deg, #2b5396 0%, #2b7696d1 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 20px 50px;
+}
+.hero-title {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+.hero-subtitle {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #dbe8f1;
+}
+.hero-description {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #eff7fc;
+}
+
+/* Feature cards (Home page) */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+.feature-card {
+  background: #fff;
+  border: 1px solid #d0dbe5;
+  border-radius: 16px;
+  padding: 20px;
+  max-width: 280px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.feature-card h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.feature-card p {
+  font-size: 15px;
+  color: #2f455c;
+  margin-bottom: 16px;
+}
+.feature-card .button {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #2d7a9f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.feature-card .button:hover {
+  background: #23627a;
+}
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Content container for feature pages */
+.content {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px 60px;
+}
+.content h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+.content p, .content li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2f455c;
+}
+.content li {
+  margin-bottom: 8px;
+}
+
+/* Image container (for placeholder or future screenshots) */
+.image-container {
+  text-align: center;
+  margin: 20px 0;
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #d0dbe5;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+/* Make layout responsive on smaller screens */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-card {
+    width: 90%;
+  }
+  .hero-title {
+    font-size: 36px;
+  }
+}
