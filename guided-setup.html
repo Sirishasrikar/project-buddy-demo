@@ -25,6 +25,19 @@
       <li><strong>Initial Plan:</strong> Automatically generate a starter task list and timeline based on the chosen template.</li>
     </ol>
     <p>This guided setup ensures even a beginner can get a structured project plan up and running in minutes.</p>
+    <!-- Guided Project Setup Form: (Place this inside the content div on guided-setup.html) -->
+<form id="projectForm">
+  <label for="projectName">Project Name:</label><br>
+  <input type="text" id="projectName" placeholder="Enter project name" required><br><br>
+
+  <label for="projectOwner">Project Owner:</label><br>
+  <input type="text" id="projectOwner" placeholder="Enter owner name"><br><br>
+
+  <label for="projectDesc">Description:</label><br>
+  <textarea id="projectDesc" placeholder="Enter project description"></textarea><br><br>
+
+  <button type="button" id="saveProjectBtn">Save Project</button>
+</form>
 
     <!-- Placeholder image showing wizard flow -->
     <div class="image-container">
