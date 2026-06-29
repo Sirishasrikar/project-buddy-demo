@@ -1,4 +1,11 @@
 /* General page styles */
+/* Use Open Sans font for all text */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  /* You can also set a comfortable base font size and line height for readability */
+  font-size: 16px;
+  line-height: 1.6;
+}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
